@@ -22,6 +22,13 @@ node_modules
 
 ## Important Docker Commands
 
+- *To pull an image from dockerhub*
+```
+docker pull mongo
+docker pull debian
+docker pull redis
+```
+
 - *To show all running and stopped containers*
 
 ```
