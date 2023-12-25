@@ -1,5 +1,26 @@
 
-# Important Docker Commands
+## Dockerfile and .dockerignore
+
+This is a demo dockerfile.
+```
+FROM node:latest
+WORKDIR /app
+RUN npm i
+COPY . .
+EXPOSE 3500
+CMD ['npm','run','dev']
+
+```
+
+This is a demo dockerignore
+
+```
+*.txt
+node_modules
+```
+
+
+## Important Docker Commands
 
 - *To show all running and stopped containers*
 
@@ -44,4 +65,10 @@ docker container rm <container_name> -f
 
 ```
 docker image rm <image_name>
+```
+
+- *Inspect changes in container*
+
+```
+docker diff <container_name/id>
 ```
